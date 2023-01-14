@@ -1,0 +1,217 @@
+html{
+    
+    color: aliceblue;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+
+#main-container {
+    
+    display: flex;
+    align-items: stretch; /* make all child elements inside container take up the full height of the container */
+   
+
+   
+    
+    
+}
+#left-container,#right-container{
+    min-height: fit-content;
+   
+   
+}
+
+#left-container {
+    float: left; /* float the container to the left */
+    /* any styles for the container */
+    border-radius: 25px; /* add rounded edges to the container */
+    background-color:  rgb(29, 27, 27);
+    height: 825px;
+    margin-right: 20px;
+    position: fixed;
+
+    
+}
+
+#right-container {
+    /* any styles for the container */
+    height: 740px;
+    margin-left: 320px;
+   
+}
+
+#top-right-container {
+    display: flex; /* set the display to flex to arrange the containers in a row */
+    flex-wrap: nowrap;
+    /* any styles for the container */
+    border-radius: 25px; /* add rounded edges to the container */
+    background-color: rgb(29, 27, 27);
+    margin-bottom: 20px;
+    align-items: center; /* align items to the center */
+    justify-content: center; /* align items to the center */
+    
+    
+}
+
+#top-right-container-1, #top-right-container-2 {
+    /* any styles for the container */
+    margin-right: 10px;
+    margin-top: 20px;
+    flex:1;
+    border-radius: 25px; /* add rounded edges to the container */
+    
+   
+   
+    
+    
+}
+#top-right-container-1{
+    padding: 30px;
+}
+#top-right-container-1 h2{
+    margin-top:-20px
+}
+#top-right-container p{
+    max-width: 100%;
+    
+}
+#top-right-container-1 a{
+   
+    color:#c0bdbd;
+}
+#top-right-container-1 a:hover{
+    
+    color:aliceblue;
+}
+
+#top-right-container img{
+    
+   
+}
+#top-right-container-2 img{
+    
+    padding: 10px;
+    width: 350px;
+    max-width: 100%;
+}
+
+
+#bottom-right-container {
+    /* any styles for the container */
+    background-color:  rgb(29, 27, 27);
+    border-radius: 25px; 
+    padding: 30px;
+}
+
+#tony-stark-img {
+    /* any styles for the image */
+    align-items: center;
+    
+
+}
+
+#caption {
+    /* any styles for the caption container */
+    text-align: center;
+}
+
+#line1 {
+    /* any styles for the first line of the caption */
+}
+
+#line2 {
+    font-size: smaller; /* smaller font size for the second line of the caption */
+}
+
+#buttons {
+    /* any styles for the buttons container */
+    text-align: center;
+    
+}
+
+#button1, #button2, #button3 {
+    background-color: rgb(50, 46, 46); /* black background for the buttons */
+    color: grey; /* grey color for button text */
+    /* any other styles for the buttons */
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px ;
+    text-decoration: none; /* remove underline from the links */
+    border: none; /* remove border from the buttons */
+    font-size: 16px; /* increase font size for the button text */
+    cursor: pointer; /* change cursor to pointer when hovered over */
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+
+}
+
+#button1:hover, #button2:hover, #button3:hover {
+    color: white; /* white text color when hovered over */
+}
+
+
+table {
+    width: 100%; /* make the table take up the full width of its parent container */
+    border-collapse: collapse; /* remove the default cell spacing */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* add a border to all cells */
+    padding: 8px; /* add padding to all cells */
+    text-align: left; /* align the text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* add a background color to the header cells */
+    font-weight: bold; /* make the text bold */
+    color:black;
+}
+
+
+@media (max-width: 2000px) {
+    @media only screen and (max-width: 640px) {
+        #main-container{
+          display: flex;
+          flex-direction: column;
+        }
+        #left-container{
+           margin-top: -150px;
+            display: flex;
+            flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: unset;
+        width:100%;margin-bottom: 30px;
+        }
+        #left-container img{
+            margin: auto;
+            
+        }
+        #right-container{
+            margin: auto;
+        }
+        #buttons{
+
+        }
+        #top-right-container{
+           display: flex;
+           flex-direction: column;
+        }
+        #top-right-container-1,#top-right-container-2{
+            min-height: 100px;
+        }
+        #top-right-container-2 img{
+            width:auto;
+            
+            height:auto;
+            
+        }
+    }
+}
